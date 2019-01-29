@@ -5,4 +5,12 @@
     <string name="email">Email</string>
     <string name="contraseña">Contraseña</string>
     <string name="forgot">Olvidé mi contraseña</string>
+    <string name="iniciar">Ingresar</string>
+    <string name="registrar">Registrar</string>
+    <string name="todo">TODO</string>
+    <string name="registro">Registro</string>
+    <string name="prestador_de_servicio">Prestador de Servicio</string>
+    <string name="usuario">Usuario</string>
+    <string name="bienvenido">Bienvenido</string>
+
 </resources>

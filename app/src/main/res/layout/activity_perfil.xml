@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryLigth"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorFondo"
+            android:textSize="14sp"
+            android:text="@string/registro"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/menu">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_menu_24px"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imagen_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cabecera"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="185dp"
+            android:layout_gravity="center"
+            android:src="@drawable/usuario" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prestador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagen_usuario"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_prestador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_boton_principal"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:text="@string/prestador_de_servicio"
+            android:textColor="@color/colorFondo"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prestador"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_boton_principal"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:text="@string/usuario"
+            android:textColor="@color/colorFondo"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
