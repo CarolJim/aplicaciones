@@ -11,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".WelcomeActivity"></activity>
+        <activity android:name=".DataWLender"></activity>
+        <activity android:name=".DataDLender" />
+        <activity android:name=".DataGLender" />
+        <activity android:name=".CategoriasActivity" />
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".PerfilActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

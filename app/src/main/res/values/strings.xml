@@ -12,5 +12,22 @@
     <string name="prestador_de_servicio">Prestador de Servicio</string>
     <string name="usuario">Usuario</string>
     <string name="bienvenido">Bienvenido</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="registroP">Registro Prestador de Servicios</string>
+    <string name="datos_personales">Datos Personales</string>
+    <string name="indicaciones1">Proporciona la Siguiente Información</string>
+    <string name="nombre_s">Nombre(s)</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="continuar">Continuar</string>
+    <string name="datos_del_domicilio">Datos del Domicilio</string>
+    <string name="calle">Calle</string>
+    <string name="n_exterior">N. Exterior</string>
+    <string name="n_interior">N. Interior</string>
+    <string name="c_p">C.P.</string>
+    <string name="colonia">Colonia</string>
+    <string name="tel_fijo">Teléfono fijo</string>
+    <string name="tel_celular">Teléfono Celular</string>
+    <string name="pregunta1">¿Cuenta con local propio?</string>
+    <string name="oficio_profesion">Datos del Oficio o Profesión</string>
 
 </resources>
