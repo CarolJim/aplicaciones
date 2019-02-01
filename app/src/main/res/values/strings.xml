@@ -29,5 +29,13 @@
     <string name="tel_celular">Teléfono Celular</string>
     <string name="pregunta1">¿Cuenta con local propio?</string>
     <string name="oficio_profesion">Datos del Oficio o Profesión</string>
+    <string name="experiencia">Años de Experiencia</string>
+    <string name="area">Area a la que pertenece</string>
+    <string name="info_fotos">Toma Fotos Legibles de los Siguientes Documentos</string>
+    <string name="acta_de_nacimiento">Acta de Nacimiento</string>
+    <string name="certificado_de_estudios">Certificado de Estudios</string>
+    <string name="ine_ife">INE / IFE</string>
+    <string name="curp">CURP</string>
+    <string name="curriculum_vitae">Curriculum Vitae</string>
 
 </resources>

@@ -71,7 +71,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:contentDescription="@null"
-            android:src="@drawable/paso3off"/>
+            android:src="@drawable/paso3on"/>
     </LinearLayout>
 
     <LinearLayout
@@ -99,6 +99,182 @@
             android:text="@string/indicaciones1"
             android:textColor="@color/colorMedio"
             android:textSize="14sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed_trabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@drawable/cuadro_texto"
+                android:hint="Oficio o Profesión"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"
+                android:inputType="textCapWords|textNoSuggestions">
+
+                <requestFocus/>
+            </EditText>
+
+            <EditText
+                android:id="@+id/años_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/cuadro_texto"
+                android:textColor="@color/colorPrimaryLigth"
+                android:hint="@string/experiencia"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:drawableRight="@drawable/ic_baseline_expand_more_24px"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/ed_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadro_texto"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/area"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"
+                android:drawableRight="@drawable/ic_baseline_expand_more_24px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/info_fotos"
+                android:textColor="@color/colorMedio"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/ed_actanac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
+                android:background="@drawable/cuadro_texto"
+                android:hint="@string/acta_de_nacimiento"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/ed_certificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
+                android:background="@drawable/cuadro_texto"
+                android:hint="@string/certificado_de_estudios"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"/>
+
+
+            <EditText
+                android:id="@+id/ed_ineife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
+                android:background="@drawable/cuadro_texto"
+                android:hint="@string/ine_ife"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"/>
+
+
+            <EditText
+                android:id="@+id/ed_curpfoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
+                android:background="@drawable/cuadro_texto"
+                android:hint="@string/curp"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"/>
+
+
+            <EditText
+                android:id="@+id/ed_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
+                android:background="@drawable/cuadro_texto"
+                android:hint="@string/curriculum_vitae"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/selector_boton_principal"
+            android:padding="10dp"
+            android:text="@string/cancelar"
+            android:textColor="@color/colorFondo"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_continuar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/selector_boton_principal"
+            android:padding="10dp"
+            android:textColor="@color/colorFondo"
+            android:text="@string/continuar"
+            android:textSize="12sp"/>
     </LinearLayout>
 
 </LinearLayout>

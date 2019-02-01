@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DataWLender"></activity>
+        <activity android:name=".DataWLender" />
         <activity android:name=".DataDLender" />
         <activity android:name=".DataGLender" />
         <activity android:name=".CategoriasActivity" />

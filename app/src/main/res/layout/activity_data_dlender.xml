@@ -223,7 +223,7 @@
                 android:padding="8dp"
                 android:background="@drawable/cuadro_texto"
                 android:text="@string/pregunta1"
-                android:textColor="@color/colorPrimaryLigth"
+                android:textColor="@color/colorMedio"
                 android:textSize="12sp"/>
 
             <LinearLayout
