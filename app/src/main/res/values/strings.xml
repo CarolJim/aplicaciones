@@ -37,5 +37,8 @@
     <string name="ine_ife">INE / IFE</string>
     <string name="curp">CURP</string>
     <string name="curriculum_vitae">Curriculum Vitae</string>
+    <string name="oficio_t">Oficio o Profesión</string>
+
+    <string name="facebook_app_id">2236187309745903</string>
 
 </resources>

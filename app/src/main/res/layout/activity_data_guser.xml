@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DataWLender">
+    tools:context=".DataGUser">
 
     <LinearLayout
         android:id="@+id/app_bar"
@@ -21,7 +21,7 @@
             android:layout_weight="1"
             android:textColor="@color/colorFondo"
             android:textSize="14sp"
-            android:text="@string/registroP"
+            android:text="Registro Usuarios"
             android:textStyle="bold"
             android:textAlignment="center"/>
 
@@ -53,7 +53,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:contentDescription="@null"
-            android:src="@drawable/pasocompleto"/>
+            android:src="@drawable/paso1on"/>
 
         <ImageView
             android:layout_width="0dip"
@@ -62,7 +62,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:contentDescription="@null"
-            android:src="@drawable/pasocompleto"/>
+            android:src="@drawable/paso2off"/>
 
         <ImageView
             android:layout_width="0dip"
@@ -71,7 +71,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:contentDescription="@null"
-            android:src="@drawable/paso3on"/>
+            android:src="@drawable/paso3off"/>
     </LinearLayout>
 
     <LinearLayout
@@ -86,7 +86,7 @@
             android:id="@+id/tv_infoP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/oficio_profesion"
+            android:text="@string/datos_personales"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
             android:textStyle="bold"/>
@@ -115,128 +115,83 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/ed_trabajo"
+                android:id="@+id/ed_nombre_usu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
                 android:background="@drawable/cuadro_texto"
-                android:hint="@string/oficio_t"
+                android:hint="Nombre Completo"
                 android:textColor="@color/colorPrimaryLigth"
                 android:textSize="12sp"
-                android:inputType="textCapWords|textNoSuggestions">
-
+                android:inputType="textCapWords|textNoSuggestions"
+                android:singleLine="true"
+                android:padding="8dp">
                 <requestFocus/>
             </EditText>
 
             <EditText
-                android:id="@+id/años_exp"
+                android:id="@+id/correo_usu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
+                android:layout_height="match_parent"
                 android:background="@drawable/cuadro_texto"
-                android:textColor="@color/colorPrimaryLigth"
-                android:hint="@string/experiencia"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:drawableRight="@drawable/ic_baseline_expand_more_24px"
-                android:layout_marginTop="10dp"
-                android:textSize="12sp"/>
-
-            <EditText
-                android:id="@+id/ed_area"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/cuadro_texto"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:hint="@string/area"
+                android:hint="Correo Electrónico"
                 android:textColor="@color/colorPrimaryLigth"
                 android:textSize="12sp"
-                android:drawableRight="@drawable/ic_baseline_expand_more_24px"/>
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/ed_contraseña_usu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cuadro_texto"
+                android:hint="Contraseña"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/ed_confirma_con_usu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cuadro_texto"
+                android:hint="Confirm Contraseña"
+                android:textColor="@color/colorPrimaryLigth"
+                android:textSize="12sp"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/info_fotos"
-                android:textColor="@color/colorMedio"
-                android:textSize="12sp"/>
+                android:layout_marginTop="30dp"
+                android:text="Login Status"
+                android:gravity="center"
+                android:id="@+id/tv_login"
+                android:textStyle="bold"/>
 
-            <EditText
-                android:id="@+id/ed_actanac"
-                android:layout_width="match_parent"
+            <com.facebook.login.widget.LoginButton
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"
-                android:focusableInTouchMode="false"
-                android:focusable="false"
-                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
-                android:background="@drawable/cuadro_texto"
-                android:hint="@string/acta_de_nacimiento"
-                android:textColor="@color/colorPrimaryLigth"
-                android:textSize="12sp"/>
+                android:id="@+id/btn_login_fb"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+            </com.facebook.login.widget.LoginButton>
 
-            <EditText
-                android:id="@+id/ed_certificado"
-                android:layout_width="match_parent"
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_login_google"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"
-                android:focusableInTouchMode="false"
-                android:focusable="false"
-                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
-                android:background="@drawable/cuadro_texto"
-                android:hint="@string/certificado_de_estudios"
-                android:textColor="@color/colorPrimaryLigth"
-                android:textSize="12sp"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
 
-
-            <EditText
-                android:id="@+id/ed_ineife"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"
-                android:focusableInTouchMode="false"
-                android:focusable="false"
-                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
-                android:background="@drawable/cuadro_texto"
-                android:hint="@string/ine_ife"
-                android:textColor="@color/colorPrimaryLigth"
-                android:textSize="12sp"/>
-
-
-            <EditText
-                android:id="@+id/ed_curpfoto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"
-                android:focusableInTouchMode="false"
-                android:focusable="false"
-                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
-                android:background="@drawable/cuadro_texto"
-                android:hint="@string/curp"
-                android:textColor="@color/colorPrimaryLigth"
-                android:textSize="12sp"/>
-
-
-            <EditText
-                android:id="@+id/ed_cv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"
-                android:focusableInTouchMode="false"
-                android:focusable="false"
-                android:drawableRight="@drawable/ic_baseline_add_a_photo_24px"
-                android:background="@drawable/cuadro_texto"
-                android:hint="@string/curriculum_vitae"
-                android:textColor="@color/colorPrimaryLigth"
-                android:textSize="12sp"/>
-
+            </com.google.android.gms.common.SignInButton>
 
         </LinearLayout>
     </ScrollView>
@@ -246,7 +201,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="20dp">
 
         <Button
             android:id="@+id/btn_cancelar"

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "561123495550",
+    "firebase_url": "https://supermai.firebaseio.com",
+    "project_id": "supermai",
+    "storage_bucket": "supermai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561123495550:android:9a61346f53a36714",
+        "android_client_info": {
+          "package_name": "com.example.supermai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561123495550-c2f79jiqcpvdhcfknj9mr4solt0huv9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.supermai",
+            "certificate_hash": "a76b354f1a4559913c9e113607bfca2aedbd88d0"
+          }
+        },
+        {
+          "client_id": "561123495550-a7ludr71ijgf2mmnhg91ul7ovfr5563t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7GOFnJRWYDxFXqEiDBCBpX0HYIC8edV8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561123495550-a7ludr71ijgf2mmnhg91ul7ovfr5563t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

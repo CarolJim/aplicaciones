@@ -6,21 +6,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PerfilActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     Button prestador, usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil);
+        setContentView(R.layout.activity_register);
         prestador = findViewById(R.id.btn_prestador);
         usuario = findViewById(R.id.btn_usuario);
 
         prestador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PerfilActivity.this, DataGLender.class);
+                Intent intent = new Intent(RegisterActivity.this, DataGLender.class);
+                startActivity(intent);
+            }
+        });
+
+        usuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegisterActivity.this, DataGUser.class);
                 startActivity(intent);
             }
         });

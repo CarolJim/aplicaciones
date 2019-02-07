@@ -22,7 +22,7 @@ public class DataGLender extends AppCompatActivity {
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DataGLender.this, PerfilActivity.class);
+                Intent intent = new Intent(DataGLender.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });

@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registra= new Intent(HomeActivity.this, PerfilActivity.class);
+                Intent registra= new Intent(HomeActivity.this, RegisterActivity.class);
                 startActivity(registra);
             }
         });
@@ -35,6 +35,6 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    Intent avanza= new Intent(HomeActivity.this, PerfilActivity.class);
+    Intent avanza= new Intent(HomeActivity.this, RegisterActivity.class);
 
 }
