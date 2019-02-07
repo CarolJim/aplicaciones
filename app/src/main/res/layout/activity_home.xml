@@ -32,6 +32,7 @@
             android:gravity="center"
             android:id="@+id/menu">
 
+
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="20dp"
@@ -41,11 +42,26 @@
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido!"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
     <RelativeLayout
         android:id="@+id/iv_loguito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center_horizontal">
 
         <ImageView
@@ -114,32 +130,34 @@
         android:layout_marginTop="15dp">
 
         <Button
-            android:id="@+id/btn_ingresar"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="5dp"
-            android:background="@drawable/selector_boton_principal"
-            android:padding="8dp"
-            android:text="@string/iniciar"
-            android:textColor="@color/colorFondo"
-            android:textSize="12sp" />
-
-        <Button
             android:id="@+id/btn_registrar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:background="@drawable/selector_boton_principal"
             android:padding="8dp"
             android:textColor="@color/colorFondo"
             android:text="@string/registrar"
             android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/selector_boton_principal"
+            android:padding="8dp"
+            android:text="@string/iniciar"
+            android:textColor="@color/colorFondo"
+            android:textSize="12sp" />
+
+
     </LinearLayout>
 
 

@@ -2,7 +2,7 @@
     <string name="app_name">SuperMai</string>
     <string name="infosplash">Cargando datos de la aplicación</string>
     <string name="version">1.0.0</string>
-    <string name="email">Email</string>
+    <string name="email">Correo electrónico</string>
     <string name="contraseña">Contraseña</string>
     <string name="forgot">Olvidé mi contraseña</string>
     <string name="iniciar">Ingresar</string>
