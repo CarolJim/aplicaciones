@@ -31,7 +31,7 @@ public class SplashActivity extends Activity {
                     i++;
                 }else{
                     timer.cancel();
-                    Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, RegisterActivity.class);
                     startActivity(intent);
                     finish();
                 }
