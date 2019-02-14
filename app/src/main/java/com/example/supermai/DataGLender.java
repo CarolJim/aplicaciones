@@ -9,14 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class DataGLender extends AppCompatActivity {
 
-    Button continuar, cancelar;
     ViewPager viewPager;
     LinearLayout sliderDotspanel;
     private int dotscount;
     private ImageView[] dots;
+    TextView ingresa;
 
 
     @Override
@@ -24,25 +25,8 @@ public class DataGLender extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_glender);
 
-        continuar = findViewById(R.id.btn_continuar);
-        cancelar = findViewById(R.id.btn_cancelar);
+        ingresa = findViewById(R.id.tv_ingresa);
 
-
-        cancelar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DataGLender.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        continuar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DataGLender.this, DataDLender.class);
-                startActivity(intent);
-            }
-        });
 
         //-------------SLIDE DE IMAGENES ----------------------//
         viewPager = findViewById(R.id.viewPager);
@@ -76,6 +60,15 @@ public class DataGLender extends AppCompatActivity {
 
             @Override
             public void onPageScrollStateChanged(int state) {
+            }
+        });
+
+        //****************************************************************************************************//
+        ingresa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataGLender.this, SessionLenderActivity.class);
+                startActivity(intent);
             }
         });
 
