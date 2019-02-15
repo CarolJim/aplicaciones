@@ -89,7 +89,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/registro_pres"
+        android:id="@+id/btn_registro_pres"
         android:layout_width="match_parent"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"

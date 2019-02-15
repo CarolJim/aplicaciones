@@ -40,5 +40,7 @@
     <string name="oficio_t">Oficio o Profesión</string>
 
     <string name="facebook_app_id">2236187309745903</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="question">¿En qué estado vas a ofrecer tus servicios?</string>
 
 </resources>

@@ -18,6 +18,7 @@ public class DataGLender extends AppCompatActivity {
     private int dotscount;
     private ImageView[] dots;
     TextView ingresa;
+    Button registro;
 
 
     @Override
@@ -26,6 +27,7 @@ public class DataGLender extends AppCompatActivity {
         setContentView(R.layout.activity_data_glender);
 
         ingresa = findViewById(R.id.tv_ingresa);
+        registro = findViewById(R.id.btn_registro_pres);
 
 
         //-------------SLIDE DE IMAGENES ----------------------//
@@ -68,6 +70,14 @@ public class DataGLender extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DataGLender.this, SessionLenderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataGLender.this, DataDLender.class);
                 startActivity(intent);
             }
         });
