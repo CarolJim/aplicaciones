@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SessionLenderActivity"></activity>
+        <activity android:name=".ContactLenderActivity"></activity>
+        <activity android:name=".SessionLenderActivity" />
         <activity android:name=".DataGUser" />
         <activity android:name=".DataWLender" />
         <activity android:name=".DataDLender" />

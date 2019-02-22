@@ -1,6 +1,7 @@
 package com.example.supermai;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -13,6 +14,8 @@ import java.util.List;
 
 public class DataDLender extends AppCompatActivity {
 
+
+    Button siguiente;
     List<Estados> lstestados;
 
 
@@ -20,6 +23,8 @@ public class DataDLender extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_dlender);
+
+        siguiente = findViewById(R.id.btn_continuar);
 
         lstestados = new ArrayList<>();
         lstestados.add(new Estados("Aguascalientes"));
@@ -60,7 +65,13 @@ public class DataDLender extends AppCompatActivity {
         myrv.setLayoutManager(new GridLayoutManager(this,1));
         myrv.setAdapter(myAdapter);
 
-
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataDLender.this, ContactLenderActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
