@@ -1,4 +1,4 @@
-package com.example.supermai.ui.factoryactivities.base.factoryinterfaces;
+package com.example.supermai.ui.base.factoryinterfaces;
 
 public interface IProcessData {
     void onCreate();

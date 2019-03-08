@@ -51,5 +51,36 @@
     <string name="run_time_enable_permissions_btn_lbl">Habilitar Permisos</string>
     <string name="run_time_continue_anyway_btn_lbl">Continuar</string>
 
+    <!-- error_view_activity_activity.xml -->
+    <string name="txt_errorText">Ocurrió un Error, al Hacer la Consulta\nIntentelo mas Tarde.</string>
+    <string name="not_permission">Lo Sentimos, no Puedes Usar Esta Aplicación sin Conceder Permiso.</string>
+
+    <!-- Dialogs -->
+    <string name="txt_title">AVISO</string>
+    <string name="dialog_title_aviso">Aviso</string>
+    <string name="dialog_text_next">Continuar</string>
+    <string name="dialog_text_cancel">Cancelar</string>
+    <string name="dialog_text_accept">Aceptar</string>
+    <string name="dialog_text_send">Enviar</string>
+    <string name="dialog_title_mail_confirmation">Confirma tu Correo</string>
+    <string name="dialog_text_mail_confirmation">Te Hemos Enviado un Link Para\nConfirmar tu Correo.</string>
+    <string name="dialog_title_pass">Restablecer Contraseña</string>
+    <string name="dialog_text_pass">Te Hemos Enviado un Link Para\nRestablecer tu Contraseña.</string>
+    <string name="dialog_text_resend_email">Te Hemos Enviado un Link Para\nRestablecer tu Contraseña.</string>
+    <string name="dialog_text_change_mail">Ingresa tu Cuenta de Correo Electrónico</string>
+    <string name="dialog_title_change_mail">Modificar Correo</string>
+    <string name="dialog_title_resemd_mail">Reenviar Correo</string>
+    <string name="dialog_title_contact">Contacto</string>
+    <string name="dialog_hint_title">Ingresa Titulo</string>
+    <string name="dialog_hint_message">Ingresa tu Mensaje</string>
+    <string name="dialog_status_upload">Procesando\n%1$d de %2$d</string>
+    <string name="dialog_status_title">REALIZANDO REGISTRO</string>
+    <string name="dialog_status_success">Se han Guardado sus Documentos.</string>
+    <string name="dialog_status_success_count">Completados %1$d de %2$d</string>
+    <string name="dialog_status_failure">Ocurrió un Error al Cargar los Archivos.</string>
+    <string name="menu_end_session">Cerrar Sesión</string>
+
+
+
 
 </resources>

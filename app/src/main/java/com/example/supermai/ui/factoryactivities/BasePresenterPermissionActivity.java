@@ -9,7 +9,7 @@ import android.provider.Settings;
 import android.util.Log;
 
 import com.example.supermai.R;
-import com.example.supermai.ui.factoryactivities.base.factoryinterfaces.IProcessData;
+import com.example.supermai.ui.base.factoryinterfaces.IProcessData;
 
 import java.util.ArrayList;
 import java.util.List;
