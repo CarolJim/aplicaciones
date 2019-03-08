@@ -43,4 +43,13 @@
     <string name="siguiente">Siguiente</string>
     <string name="question">¿En qué estado vas a ofrecer tus servicios?</string>
 
+    <!-- Run Time Permissions Msgs -->
+    <string name="general_run_time_message">Para que tu Experiencia Dentro de la Aplicación sea Completa, Activa los Siguientes Permisos:</string>
+    <string name="runtime_camera">Hacer uso de la Cámara (Necesario Para la Captura de Documentos).</string>
+    <string name="runtime_sms">Leer tu Bandeja SMS (Requerido Para Obtener el Código de Confirmación).</string>
+    <string name="runtime_storage">Guardar Información en el Dispositivo (Esencial Para el Registro de Documentos).</string>
+    <string name="run_time_enable_permissions_btn_lbl">Habilitar Permisos</string>
+    <string name="run_time_continue_anyway_btn_lbl">Continuar</string>
+
+
 </resources>
